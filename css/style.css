@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-white:#FFFFFF;
+    --color-black:#000000;
+    --color-light-grey:#dddddd;
+    --color-dark-grey:#333333;
+    --color-brown:#4d3319;
+    --color-light-brown:#996633;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.building{
+    width: 50%;
+    height: auto;
+    margin: 50px;
+}
+.floor{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light-brown);
+    border: 1px solid var(--color-brown);
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+}
+.floor:hover{
+    cursor: pointer;
+}
+.elevators{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.elevator{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-light-grey);
+    border: 5px solid var(--color-dark-grey);
+}
+#first-elevator{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+#second-elevator{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+}
+#last-elevator{
+    position: absolute;
+    top: 75%;
+    left: 85%;
+}
+.cabin{
+    font-size: 16px;
+    color: var(--color-black);
+    text-align: center;
+}
+.animation{
+    transition: all 1s ease-in;
+}
